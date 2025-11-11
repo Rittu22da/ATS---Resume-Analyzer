@@ -9,7 +9,8 @@ from PIL import Image
 import pdf2image
 import google.generativeai as genai
 load_dotenv()
-genai.configure(api_key=os.getenv("AIzaSyDSAGEehq4V0Nq2izJMcKOqV4AxoXuhBm8"))
+genai.configure(api_key=os.getenv("xxxxxxxxxxxxxx"))      # For Security Reason the API key is hidden
+
 # genai.configure(api_key=os.getenv("AIzaSyCFbOQegV7w48B018DsvJcjlM1SllRbMRc"))
 # genai.configure(api_key="AIzaSyCFbOQegV7w48B018DsvJcjlM1SllRbMRc")
 
@@ -87,4 +88,5 @@ elif submit3:
         st.subheader("The Repsonse is")
         st.write(response)
     else:
+
         st.write("Please uplaod the resume")
